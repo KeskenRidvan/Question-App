@@ -12,7 +12,7 @@ This project is a question practice game. In this game you have 30 seconds for e
 
 ## Live Site
 
-[You can also click if you want to see the site live.]("")
+[You can also click if you want to see the site live.](https://questionapp-rk.netlify.app/)
 
 ## Screenshots
 
