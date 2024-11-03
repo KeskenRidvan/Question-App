@@ -1,0 +1,49 @@
+#timer {
+  position: relative;
+  margin: 24px auto;
+  margin-top: 50px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#time {
+  color: var(--text-color-white);
+  display: inline-block;
+  line-height: 40px;
+}
+
+.time-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+.time-indicator circle {
+  stroke-dasharray: 113px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 3px;
+  stroke: var(--text-color-white);
+  fill: none;
+  animation: countdown 30s linear infinite forwards;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 113px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #timer {
+    margin-top: 16px;
+  }
+}
